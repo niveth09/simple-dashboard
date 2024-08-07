@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+
+.App { 
+  font-size: calc(1rem + 2vmin);
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.increment{
+  color:rgb(118,229,94);
+}
+.decrement{
+  color:rgb(228,81,89);
+}
+/* .bi-chevron-right{
+  line-height: normal;
+  font-size: 0.8rem;
+} */
+.sidebar .nav-item {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar .nav-item:last-child {
+  margin-bottom: 1rem;
+}
+table th{
+  font-size:var(--fs-0)
+}
+table td{
+  font-size:var(--fs-1)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-wrapper{
+  padding:0.5rem;
+  font-size:var(--fs-2);
+  background-color:rgb(67,69,73);
+  color:rgb(184,186,190) !important;
+  
+}
+/* .icon-wrapper .icon{
+  height:0.5rem;
+  width: 0.5rem;
+} */
+.rounded-circle{
+  border-radius: 50%;
+}
+.icon-img{
+  width:var(--fs-4);
+  height:var(--fs-4);
+ 
+}
+
+.sidebar .nav-item .nav-link .img-profile,
+.topbar .nav-item .nav-link .img-profile {
+  height: 2rem;
+  width: 2rem;
+}
+
+.topbar {
+  height: 4.375rem;
+}
+.topbar .nav-item .nav-link {
+  height: 4.375rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 0.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.topbar .nav-item .nav-link:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.feedback-card{
+  -ms-overflow-style:initial;
 }
